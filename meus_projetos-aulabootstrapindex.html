@@ -1,0 +1,127 @@
+<!-- lingugem que estamos usando -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>Minha página</title>
+    <!-- Importar o Css do bootstrap  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <!--Criamos nossa própria  pasta Css e um arquivo style.ccs/colocamos o no html   -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <!-- Corpo da página -->
+  <body>
+    <!-- EStamos criando uma barra de navegação que vai ser "expand-lg"(grande) e vai ser "light" (clara) -->
+    <nav class="navbar navbar-expand-lg navbar-light margin">
+      <!--Criamos um link e colocamos uma imagem img src="img/global.png" width="220"(largura) height="80"(comprimento) -->
+      <!-- Retiramos as imagem do site Pexels (web page/app/global labs/Dio) -->
+      <a class="navbar-brand" href="#">
+        <img src="img/global.png" width="220" height="80" />
+      </a>
+      <!--div - Para colocar estilo que estão dentro dessa divisão  -->
+      <div class="collapse navbar-collapse">
+        <!-- ul - colocamos uma class que faz parte da div acima - class="navbar-nav" -->
+        <ul class="navbar-nav">
+          <!-- Fala que é um botão ativo - class="nav-item" -->
+          <li class="nav-item">
+            <!-- Precisa ter um também um class="nav-link" (tirando acaba o efeito da folha de estilo do bootstrap) -->
+            <a class="nav-link" href="#quemsomos">Quem somos</a>
+          </li>
+          <!-- Copia e cola o link acima duas vezes, e só: trocamos o nome para parceiros / serviços -->
+          <li class="nav-item">
+            <!-- Quando clicamos em parceiros na página, ele nos leva para a seção de parceiros. Devido ao href="#parceiros-->
+            <a class="nav-link" href="#parceiros">Parceiros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#serviços">Serviços</a>
+            <!-- Com as classes navbar do bootstrap deixamos todos na horizontal. Enquanto só com html ficou um abaixo do outro  -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="quemsomos">
+      <!--container-fluid pega a página inteira / text-center centraliza o texto / margin cria uma margem para o compotente -->
+      <div class="container-fluid quem-somos text-center margin">
+        <h3 class="margin">Quem Somos</h3>
+        <!-- colocamos a imagem quadrada e usamos a  class="rounded-circle" para arredonda-la -->
+        <img
+          src="img/time.jpg"
+          class="rounded-circle"
+          width="400"
+          height="400"
+          alt=""
+        />
+        <h3>Somos um time comprometido com os resultados</h3>
+      </div>
+    </section>
+
+    <section id="parceiros">
+      <div class="container-fluid text-center margin parceiros">
+        <h3 class="margin">PARCEIROS</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="img/Dio.png" width="100%" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img src="img/Dio.png" width="100%" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <img src="img/Dio.png" width="100%" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="serviços">
+      <div class="container-fluid text-center margin serviços">
+        <h3 class="margin">SERVIÇOS</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur
+              </p>
+              <img src="img/app.jpg" width="100%" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur
+              </p>
+              <img src="img/site-2.jpg" width="100%" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur
+              </p>
+              <img src="img/site-3.jpg" width="100%" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid text-center bg-footer margin">
+      <p>Desenvolvido por Angelo Camilo Laet</p>
+    </footer>
+  </body>
+</html>
